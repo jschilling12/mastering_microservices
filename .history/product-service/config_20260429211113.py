@@ -7,7 +7,7 @@ if os.path.exists(dotenv_path):
     load_dotenv(dotenv_path)
 
 class Config:
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
+   SQLALCHEMY_DATABASE_URI = False
 
 class DevelopmentConfig(Config):
     ENV = 'development'

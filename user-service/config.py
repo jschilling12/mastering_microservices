@@ -18,6 +18,10 @@ class DevelopmentConfig(Config):
     SQLALCHEMY_ECHO = True
 
 class ProductionConfig(Config):
-    pass
+    ENV = 'production'
+    DEBUG = False
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://cloudacademy:pfm_2020@user-db:3306/user'
+    SQLALCHEMY_ECHO = False
+    
 
 

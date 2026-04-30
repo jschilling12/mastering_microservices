@@ -7,7 +7,7 @@ if os.path.exists(dotenv_path):
     load_dotenv(dotenv_path)
 
 class Config:
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
+   SQLALCHEMY_DATABASE_URI = False
 
 class DevelopmentConfig(Config):
     ENV = 'development'
@@ -19,5 +19,5 @@ class DevelopmentConfig(Config):
 class ProductionConfig(Config):
     ENV = 'production'
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://cloudacademy:pfm_2020@product-db:3306/product'
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://cloudacademy:pfm_2020@product-db:3306/user'
     SQLALCHEMY_ECHO = False
