@@ -18,5 +18,5 @@ class DevelopmentConfig(Config):
 class ProductionConfig(Config):
     ENV = 'production'
     DEBUG = False
-    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://cloudacademy:pfm_2020@product-db:3306/product'
+    SQLALCHEMY_DATABASE_URI = 'mysql+mysqlconnector://cloudacademy:pfm_2020@order-db:3306/order'
     SQLALCHEMY_ECHO = False

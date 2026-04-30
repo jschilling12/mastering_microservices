@@ -46,7 +46,7 @@ class UserClient:
     
     @staticmethod
     def does_exist(username):
-        url = 'http://cuser-service:5000/api/user/' + username + '/exists'
+        url = f'http://cuser-service:5000/api/user/' + username + '/exists'
         response = requests.request("GET", url=url)
         return response.status_code == 200
     
